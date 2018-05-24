@@ -1,0 +1,130 @@
+.fundo-branco,
+.fundo-branco:hover {
+  background: #fff;
+  color: #fff !important
+}
+
+.fundo-transparente,
+.fundo-transparente:hover {
+  width: 200px !important;
+  color: #fff;
+  border-color: #fff !important
+}
+
+.fundo-branco-news {
+  font: 700 16px/32px "GothamRnd-Book";
+  text-transform: uppercase;
+  padding: 14px 57px;
+  border: 80px;
+  position: absolute;
+  color: #189bde;
+  top: 0;
+  right: 0;
+  border-color: #fff;
+  border-radius: 50px;
+  background: #fff;
+  -webkit-transition: all .4s linear;
+  -o-transition: all .4s linear;
+  transition: all .4s linear;
+  z-index: 1
+}
+
+.botao,
+.input-news {
+  height: 60px;
+  border-radius: 50px
+}
+
+.input-news {
+  background: 0 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #fff;
+  padding-left: 30px;
+  z-index: 0;
+  color: #189bde;
+  width: 100%;
+  display: block
+}
+
+.botao {
+  font-size: 14px;
+  line-height: 58px;
+  text-align: center !important;
+  letter-spacing: 1.4px;
+  font-family: "GothamRnd-Book";
+  font-weight: 700;
+  width: 300px;
+  display: inline-block;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+  color: #fff
+}
+
+.cinza {
+  color: #c8c8c8 !important;
+  border-color: #c8c8c8 !important;
+  width: 50%;
+  margin-bottom: 10%
+}
+
+@font-face {
+  font-family: 'Glyphter';
+  src: url(../fonts/plugmobile/Glyphter.eot);
+  src: url(../fonts/plugmobile/Glyphter.eot?#iefix) format('embedded-opentype'), url(../fonts/plugmobile/Glyphter.woff) format('woff'), url(../fonts/plugmobile/Glyphter.ttf) format('truetype'), url(../fonts/plugmobile/Glyphter.svg#Glyphter) format('svg');
+  font-weight: 400;
+  font-style: normal
+}
+
+[class*=icon-]:before {
+  display: inline-block;
+  font-family: 'Glyphter';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.icon-guy-white:before {
+  content: '\0041'
+}
+
+.icon-your-white:before {
+  content: '\0042'
+}
+
+.icon-star-white:before {
+  content: '\0043'
+}
+
+.icon-celular:before {
+  content: '\0044'
+}
+
+.icon-celular-white:before {
+  content: '\0045'
+}
+
+.icon-guy:before {
+  content: '\0046'
+}
+
+.icon-your:before {
+  content: '\0047'
+}
+
+.icon-star:before {
+  content: '\0048'
+}
+
+.estoque-info {
+  padding-top: 15%
+}
+
+@media (max-width:1000px) {
+  .botao {}
+}

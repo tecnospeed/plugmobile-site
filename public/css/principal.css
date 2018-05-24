@@ -1,0 +1,626 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700);
+@font-face {
+    font-family: "GothamRnd-Book";
+    font-style: normal;
+    font-weight: 400;
+    src: local("GothamRnd-Book"), url(../fonts/gotham/GothamRnd-Book.otf) format("opentype")
+}
+
+@font-face {
+    font-family: "GothamRnd-Medium";
+    font-style: normal;
+    font-weight: 400;
+    src: local("GothamRnd-Medium"), url(../fonts/gotham/GothamRnd-Medium.otf) format("opentype")
+}
+
+@font-face {
+    font-family: "GothamRnd-Bold";
+    font-style: normal;
+    font-weight: 400;
+    src: local("GothamRnd-Bold"), url(../fonts/gotham/GothamRnd-Bold.otf) format("opentype")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html {
+    font: 16px "GothamRnd-Book", sans-serif;
+    color: #555
+}
+
+nav,
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+    cursor: pointer
+}
+
+h1 {
+    font-family: "GothamRnd-Medium", sans-serif
+}
+
+a,
+header h2,
+p,
+ul.grid p {
+    font-family: "GothamRnd-Book", sans-serif
+}
+
+hr {
+    width: 150px;
+    height: 2px;
+    background-color: #2196f3;
+    border: 0;
+    margin-bottom: 80px
+}
+
+.section,
+header {
+    align-items: center
+}
+
+.section {
+    flex-direction: column;
+    padding: 130px 0
+}
+
+.section h3.title,
+.section p {
+    text-align: center;
+    margin-bottom: 35px
+}
+
+.section h3.title {
+    color: #414a4f;
+    text-transform: capitalize;
+    font: 700 32px "GothamRnd-Bold", sans-serif
+}
+
+.section p {
+    max-width: 800px;
+    line-height: 2
+}
+
+ul.grid {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+ul.grid p {
+    color: #fff !important;
+    text-transform: uppercase;
+    font-size: 50px
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 150px 20px;
+    background: rebeccapurple;
+}
+
+.section,
+header,
+header nav,
+ul.grid {
+    display: flex
+}
+
+header nav li {
+    margin: 0 15px
+}
+
+header nav li:first-child {
+    margin-left: 0
+}
+
+header nav li:last-child {
+    margin-right: 0
+}
+
+.hero-principal {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+    background: url(../images/plugmobile/topo.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: row
+}
+
+.hero-principal .topo {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row
+}
+
+.left-align {
+    text-align: left !important
+}
+
+.col-header-text {
+    color: #fff
+}
+
+.col-header-text h1 {
+    font-family: "GothamRnd-Book", sans-serif;
+    font-size: 50px;
+    line-height: 70px;
+    letter-spacing: .05px;
+    font-weight: 300;
+    color: #fff
+}
+
+.col-header-text h1 span {
+    font-weight: 600
+}
+
+.col-header-text p {
+    font-family: "GothamRnd-Book", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 25px 0 54px
+}
+
+.col-header-img,
+.sec-features .container-acting {
+    position: relative
+}
+
+.col-header-img img {
+    position: absolute
+}
+
+.col-header-img img.img-header-lg {
+    left: -100px;
+    top: -73px;
+    z-index: 20
+}
+
+.col-header-img img.img-header-sm {
+    right: 62px;
+    top: 118px;
+    z-index: 20
+}
+
+.phone-gif {
+    margin-left: 20%;
+    margin-top: -30%
+}
+
+.phone-gif img {
+    width: 300%
+}
+
+.sec-features {
+    padding: 150px 0
+}
+
+.sec-features .container-acting img {
+    margin: 0 auto;
+    height: auto;
+    padding: 80px 0
+}
+
+.section_title {
+    margin: 30px auto 75px
+}
+
+.section_title h3 {
+    font-size: 36px;
+    line-height: 45px;
+    font-family: "GothamRnd-Medium";
+    font-weight: 700;
+    color: #999;
+    text-transform: uppercase;
+    padding-bottom: 25px
+}
+
+.section_title p {
+    font: 400 16px/28px "GothamRnd-Book";
+    color: #c8c8c8;
+    width: 60%;
+    margin: 0 auto
+}
+
+.sec-features .container-acting .sec_features_item,
+.sec_features_item,
+.section_title {
+    text-align: center
+}
+
+.sec_features_item .icon,
+.sec_features_item .icon:after {
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear
+}
+
+.sec_features_item .icon {
+    font-size: 50px;
+    color: #e0716a;
+    vertical-align: middle;
+    line-height: 117px;
+    position: relative;
+    height: 106px;
+    width: 106px;
+    background-color: #ccc;
+    z-index: 0
+}
+
+.sec_features_item .icon:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    z-index: -1
+}
+
+.sec_features_item .title {
+    font-size: 18px;
+    color: #9c9c9c;
+    margin: 20px 0 13px;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.sec_features_item p {
+    font-size: 14px
+}
+
+.sec_features_item:hover .icon {
+    color: #fff;
+    background-color: #e0716a
+}
+
+.sec_features_item:hover .icon:after {
+    -webkit-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transform: scale(.8);
+    opacity: 0
+}
+
+.section_title h2 {
+    font-family: 'GothamRnd-Medium', sans-serif;
+    margin-bottom: 2%
+}
+
+.section_title p {
+    font-family: 'GothamRnd-Book', sans-serif
+}
+
+.plugs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f8f8f8
+}
+
+.plugs .titulo,
+.todos-plugs {
+    align-self: center
+}
+
+.news .titulo h2,
+.plugs .titulo h2 {
+    font-family: "GothamRnd-Medium", sans-serif;
+    color: #404040
+}
+
+.plugs .titulo p,
+.todos-plugs .item p {
+    font: 400 16px/28px "GothamRnd-Book";
+    color: #c8c8c8
+}
+
+.plugs .titulo p {
+    margin: 0 auto
+}
+
+.todos-plugs {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.todos-plugs .item {
+    margin: 30px;
+    width: 260px;
+    display: inline-grid
+}
+
+.todos-plugs .item p {
+    margin-top: 10%;
+    text-align: left;
+    margin-bottom: 10%
+}
+
+.todos-plugs .item a {
+    width: 100% !important;
+    bottom: 0 !important
+}
+
+.testimonial_area_three {
+    position: relative;
+    background: url(../images/plugmobile/depoimentos.png);
+    height: 60vh;
+    background-size: cover;
+    z-index: 0
+}
+
+.test-carousel-three {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto
+}
+
+.test-carousel-three .icon {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 35px;
+    line-height: 100px;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block
+}
+
+.test-carousel-three p {
+    font-size: 24px;
+    color: #fff;
+    opacity: .8;
+    font-style: italic;
+    padding: 75px 0;
+    line-height: 36px;
+    font-weight: 300;
+    font-family: "Roboto";
+    letter-spacing: 0
+}
+
+.test-carousel-three a {
+    color: #fff;
+    opacity: .8;
+    font-size: 16px;
+    line-height: 30px
+}
+
+.test-carousel-three .owl-dots {
+    text-align: center;
+    margin-top: 75px
+}
+
+.test-carousel-three .owl-dots .owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #b2a4f9;
+    display: inline-block;
+    margin: 0 5px;
+    -webkit-transition: all .6s linear;
+    -o-transition: all .6s linear;
+    transition: all .6s linear
+}
+
+.test-carousel-three .owl-dots .owl-dot.active,
+.test-carousel-three .owl-dots .owl-dot:hover {
+    background: #fff
+}
+
+.depoimentos {
+    max-width: 100%;
+    text-align: center !important;
+}
+
+.partner-icon img {
+    width: 15% !important;
+    margin-bottom: 5%
+}
+
+.partner-text {
+    font-family: 'GothamRnd-Book', sans-serif;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    color: #fff
+}
+
+.partner-guy,
+.partner-job {
+    margin: 5% auto 0;
+    width: 80%;
+    text-align: center;
+    color: #fff
+}
+
+.partner-job {
+    font-size: 12px;
+    margin: 0 auto
+}
+
+.news {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f8f8f8
+}
+
+.news .titulo {
+    align-self: center
+}
+
+.news .titulo p {
+    font: 400 16px/28px "GothamRnd-Book";
+    color: #c8c8c8;
+    margin: 0 auto
+}
+
+.subcribes-principal.input-group {
+    max-width: 630px;
+    display: block;
+    overflow: hidden;
+    margin: 30px auto 0
+}
+
+.subcribes-principal.input-group .form-control {
+    color: #df6e66 !important;
+    background: 0 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #df6e66;
+    height: 60px;
+    border-radius: 50px;
+    width: 100%;
+    display: block;
+    padding-left: 30px;
+    z-index: 0
+}
+
+.subcribes-principal.input-group .form-control::placeholder {
+    color: #df6e66
+}
+
+.subcribes-principal .input-group-btn .btn-submit {
+    font: 700 16px/32px "GothamRnd-Book";
+    text-transform: uppercase;
+    padding: 14px 57px;
+    border: 80px;
+    position: absolute;
+    color: #fff;
+    top: 0;
+    right: 0;
+    border-color: #df6e66;
+    border-radius: 50px;
+    background: #df6e66;
+    -webkit-transition: all .4s linear;
+    -o-transition: all .4s linear;
+    transition: all .4s linear;
+    z-index: 1;
+    cursor: pointer;
+    width: 200px
+}
+
+.input-group-btn {
+    position: initial !important;
+    font-size: 0;
+    white-space: nowrap
+}
+
+.noticias {
+    display: flex;
+    justify-content: center;
+    flex-direction: row
+}
+
+.noticia {
+    height: 500px;
+    width: 400px;
+    margin: 10px;
+    background: #f8f8f8
+}
+
+.noticia img {
+    max-height: 300px
+}
+
+.noticia .data {
+    position: absolute;
+    top: 60%
+}
+
+.noticia .conteudo,
+.noticia .more {
+    position: absolute;
+    top: 65%
+}
+
+.noticia .more {
+    top: 93%
+}
+
+.noticia .conteudo p,
+.noticia .data p {
+    padding: 10px;
+    color: #c8c8c8
+}
+
+.noticia .data p,
+.noticia .more a {
+    font-family: "GothamRnd-Book", sans-serif
+}
+
+.noticia .conteudo h1 {
+    font-family: bold "GothamRnd-Bold", sans-serif;
+    font-size: 17px;
+    max-width: 370px;
+    padding: 10px
+}
+
+.noticia .conteudo p {
+    font-family: normal "GothamRnd-Book", sans-serif;
+    font-size: 15px;
+    max-width: 350px;
+    text-align: left;
+    line-height: 25px
+}
+
+.noticia .more a {
+    padding: 10px
+}
+
+.img-blur {
+    filter: blur(10px)
+}
+
+.nav,
+.bg-faded {
+    /* background-color: #df6e66; */
+    background-color: transparent !important;
+}
+
+.navbar {
+    position: absolute;
+    z-index: 30;
+    width: 100%;
+    padding: 20px 400px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
